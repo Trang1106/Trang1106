@@ -1,6 +1,6 @@
 import pgzrun
 import random
-FONT_COLOR = (255, 255, 255) #màu RGB
+FONT_COLOR = (255, 255, 255) 
 WIDTH = 700
 HEIGHT = 700
 CENTER_X = WIDTH / 2
