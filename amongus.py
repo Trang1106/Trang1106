@@ -1,19 +1,19 @@
 import pgzrun
 import random
 FONT_COLOR = (255, 255, 255) #màu RGB
-WIDTH = 1300
+WIDTH = 700
 HEIGHT = 700
 CENTER_X = WIDTH / 2
 CENTER_Y = HEIGHT / 2
 CENTER = (CENTER_X, CENTER_Y)
 START_SPEED=10
-COLORS= ["orang", "blue"]
+COLORS= ["orange", "blue"]
 current_level=1
 final_level=5
 game_over= False
 game_comlete= False
 impostors=[]
-animation=[]
+animations=[]
 def draw():
     global impostors,current_level,game_over,game_comlete
     screen.clear()
@@ -53,7 +53,7 @@ def get_colors_to_create(number_of_impostors):
 def create_impostors(colors_to_create):
     new_impostors=[]
     for color in colors_to_create:
-        impostors=Actor(color + "-im")
+        impostor=Actor(color + "-im")
         new_impostors.append(impostor)
     return new_impostors
 
